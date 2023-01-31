@@ -21,20 +21,26 @@
     <!-- card -->
     <main class="p-6 space-y-5 bg-cl_verydarkblue_2 rounded-xl drop-shadow-2xl">
       <!-- card header -->
-      <div class="relative">
+      <div
+        class="relative img-container before:h-full before:w-full hover:before:bg-cl_primaryCyan before:absolute before:opacity-50 before:rounded-xl cursor-pointer"
+      >
         <img
           class="rounded-xl"
           src="./images/image-equilibrium.jpg"
           alt="header-img"
         />
         <img
-          class="absolute hidden"
+          class="absolute left-1/2 -translate-x-1/2 view-icon bottom-1/2"
           src="./images/icon-view.svg"
           alt="view-icon"
         />
       </div>
       <!-- cord content -->
-      <h1 class="text-2xl font-semibold">Equilibrium #3429</h1>
+      <h1
+        class="text-2xl font-semibold hover:text-cl_primaryCyan cursor-pointer"
+      >
+        Equilibrium #3429
+      </h1>
       <p class="text-cl_primarySoftblue opacity-75 text-base">
         Our Equilibrium collection promotes balance and calm.
       </p>
@@ -52,18 +58,22 @@
       <!-- user detail -->
       <div class="flex items-center border-t pt-4 border-cl_verydarkblue_3">
         <img
-          class="h-10 border-white border rounded-full"
+          class="h-8 border-white border rounded-full"
           src="./images/image-avatar.png"
           alt="user-avatar"
         />
         <p class="ml-5 text-cl_primarySoftblue text-base">
           Creation of
-          <span class="text-cl_white">Jules Wyvern</span>
+          <span class="text-cl_white hover:text-cl_primaryCyan cursor-pointer"
+            >Jules Wyvern</span
+          >
         </p>
       </div>
     </main>
     <!-- footer -->
-    <footer class="absolute bg-cl_white text-cl_verydarkblue_1">
+    <footer
+      class="absolute bottom-0 left-1/2 -translate-x-1/2 bg-cl_white py-1 px-2 text-cl_verydarkblue_1 text-center text-sm rounded-t-xl"
+    >
       Challenge by
       <a
         class="font-bold"
