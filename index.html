@@ -15,11 +15,55 @@
     <link rel="stylesheet" href="./css/fonts.css" />
     <title>Frontend Mentor | NFT preview card component</title>
   </head>
-  <body>
-    Equilibrium #3429 Our Equilibrium collection promotes balance and calm.
-    0.041 ETH 3 days left Creation of Jules Wyvern
+  <body
+    class="bg-cl_verydarkblue_1 text-cl_white min-h-screen grid place-items-center"
+  >
+    <!-- card -->
+    <main class="p-5 space-y-5 bg-cl_verydarkblue_2 rounded-xl">
+      <!-- card header -->
+      <div class="relative">
+        <img
+          class="rounded-xl"
+          src="./images/image-equilibrium.jpg"
+          alt="header-img"
+        />
+        <img
+          class="absolute hidden"
+          src="./images/icon-view.svg"
+          alt="view-icon"
+        />
+      </div>
+      <!-- cord content -->
+      <h1 class="text-2xl font-semibold">Equilibrium #3429</h1>
+      <p class="text-cl_primarySoftblue opacity-75">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+      <!-- cord detail -->
+      <div class="flex justify-between">
+        <div class="flex items-center text-cl_primaryCyan">
+          <img src="./images/icon-ethereum.svg" alt="ethereum-icon" />
+          <p class="ml-2">0.041 ETH</p>
+        </div>
+        <div class="flex items-center text-cl_primarySoftblue">
+          <img src="./images/icon-clock.svg" alt="clock-icon" />
+          <p class="ml-2">3 days left</p>
+        </div>
+      </div>
+      <!-- user detail -->
+      <div class="flex items-center border-t pt-4 border-cl_verydarkblue_3">
+        <img
+          class="h-10 border-white border rounded-full"
+          src="./images/image-avatar.png"
+          alt="user-avatar"
+        />
+        <p class="ml-5 text-cl_primarySoftblue">
+          Creation of
+          <span class="text-cl_white">Jules Wyvern</span>
+        </p>
+      </div>
+    </main>
     <!-- footer -->
-    <footer>
+    <footer class="sticky bg-cl_white text-cl_verydarkblue_1">
       Challenge by
       <a
         class="font-bold"
